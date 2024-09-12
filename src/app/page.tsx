@@ -5,7 +5,7 @@ import Proyectos from './components/Proyectos';
 import './globals.css';
 import "@fontsource/courier-prime/400.css";
 import "@fontsource/courier-prime/700.css";
-import "@fontsource-variable/inter/opsz.css";
+import '@fontsource-variable/inter';
 import "@fontsource-variable/lora";
 
 export default function Home() {

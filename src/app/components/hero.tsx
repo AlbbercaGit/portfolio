@@ -2,10 +2,10 @@
 
 import { useState, useEffect } from "react";
 import { Menu } from "lucide-react";
-import "@fontsource/courier-prime/400.css";
-import "@fontsource/courier-prime/700.css";
-import "@fontsource-variable/inter/opsz.css";
-import "@fontsource-variable/lora";
+// import "@fontsource/courier-prime/400.css";
+// import "@fontsource/courier-prime/700.css";
+// import "@fontsource-variable/inter/opsz.css";
+// import "@fontsource-variable/lora";
 
 export default function Component() {
   const [activeLink, setActiveLink] = useState("Estudios");
