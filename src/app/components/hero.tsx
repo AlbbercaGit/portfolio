@@ -45,7 +45,7 @@ export default function Component() {
             <p className="text-xl mb-2 text-black font-mono font-semibold">
               Heyy Soy Albberca
             </p>
-            <h1 className="text-6xl mb-6 font-inter uppercase font-extrabold text-purple-600 ">
+            <h1 className="text-5xl md:text-6xl mb-6 font-inter uppercase font-extrabold text-purple-600 ">
               Full-Stack
               <br />
               Developer
