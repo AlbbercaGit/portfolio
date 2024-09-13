@@ -31,7 +31,7 @@ export default function Component() {
         <div className="w-full h-px bg-black opacity-10 transform rotate-45"></div>{" "}
       </div>
       <header className="flex justify-between items-center mb-12 relative z-10 font-mono font-bold md:w-4/5">
-        <div className="text-2xl text-black">A.</div>
+        <div className="text-2xl text-black font-inter">A <span className="text-purple-600">.</span></div>
         <button className="absolute left-1/2 transform -translate-x-1/2 bg-purple-600 text-white px-4 py-2 hover:bg-purple-800 transition-colors border-4 border-black">
           Download CV
         </button>

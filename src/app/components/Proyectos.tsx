@@ -70,7 +70,7 @@ export default function Component() {
           className={`text-5xl font-black mb-8 text-purple-600 uppercase font-inter transition-all duration-1000 ease-out ${
             visibleItems[0] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
-          ref={el => itemRefs.current[0] = el}
+          ref={el => {itemRefs.current[0] = el}}
         >
           Proyectos
         </h1>
@@ -88,7 +88,7 @@ export default function Component() {
               }}
               onMouseEnter={() => setHoveredProject(index)}
               onMouseLeave={() => setHoveredProject(null)}
-              ref={el => itemRefs.current[index + 1] = el}
+              ref={el => {itemRefs.current[index + 1] = el}}
             >
               <img
                 src={project.image}
