@@ -5,20 +5,21 @@ import { ChevronRight } from 'lucide-react'
 
 const timelineData = [
   {
-    date: 'February 2022',
-    title: 'Application UI code in Tailwind CSS',
-    description: 'Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.',
-    link: '#'
+    date: 'Mayo 2024 - Actualidad',
+    title: 'Backend Developer en Sopra Steria',
+    description: 'Actualmente trabajo con tecnologías como Java, JavaScript y MySQL, desarrollando soluciones tanto en el front-end como en el back-end. También gestiono servidores utilizando herramientas como Apache o Mule, optimizando su rendimiento y asegurando su correcto funcionamiento.',
+    link: 'https://www.soprasteria.com'
   },
   {
-    date: 'March 2022',
-    title: 'Marketing UI design in Figma',
-    description: 'All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.',
+    date: 'Mayo 2021 - Mayo 2024',
+    title: 'Backend Developer en Praxya',
+    description: 'Trabaje con tecnologias como Ekon, Java, Javascript, Angular, MySQL Server y microservicios, ademas de gestionar el soporte para proyectos de clientes y toma de requisitos.',
+    link: 'https://www.linkedin.com/company/praxya-group/posts/?feedView=all'
   },
   {
-    date: 'April 2022',
-    title: 'E-Commerce UI code in Tailwind CSS',
-    description: 'Get started with dozens of web components and interactive elements built on top of Tailwind CSS.',
+    date: 'Septiembre 2019 - Mayo 2021',
+    title: 'Estudios en Desarrollo de Aplicaciones Web',
+    description: 'Realize los estudios de DAW en el instituto Camp de Morvedre del Puerto de Sagunto.',
   }
 ]
 
@@ -73,7 +74,7 @@ export default function Component() {
             <div className="ml-8 p-4 bg-white border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
               <div className="text-lg font-bold text-black mb-1 font-inter">{item.date}</div>
               <h2 className="text-2xl font-black mb-2 text-black font-inter">{item.title}</h2>
-              <p className="text-lg font-bold text-black font-inter mb-4">{item.description}</p>
+              <p className="text-lg font-bold text-black font-inter mb-4 text-wrap w-[95%]">{item.description}</p>
               {item.link && (
                 <a 
                   href={item.link} 

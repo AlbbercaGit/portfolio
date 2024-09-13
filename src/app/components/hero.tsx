@@ -43,7 +43,7 @@ export default function Component() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full md:w-4/5">
           <div>
             <p className="text-xl mb-2 text-black font-mono font-semibold">
-              Heyy Soy Albberca
+              Heyy soy Albberca
             </p>
             <h1 className="text-5xl md:text-6xl mb-6 font-inter uppercase font-extrabold text-purple-600 ">
               Full-Stack
