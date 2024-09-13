@@ -7,7 +7,7 @@ import Tecnologias from './components/Tecnologias';
 
 import './globals.css';
 import '@fontsource/courier-prime';
-import '@fontsource-variable/inter';
+import '@fontsource-variable/inter/opsz-italic.css';
 import "@fontsource-variable/lora";
 
 export default function Home() {
