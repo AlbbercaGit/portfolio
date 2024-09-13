@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Hero from './components/hero';
 import Proyectos from './components/Proyectos';
+import Timeline from './components/Timeline';
+import Tecnologias from './components/Tecnologias';
+
 
 import './globals.css';
 import '@fontsource/courier-prime';
@@ -16,7 +19,9 @@ export default function Home() {
       {/* Contenido */}
       <div className="relative z-10">
         <Hero />
+        <Timeline />
         <Proyectos />
+        <Tecnologias />
       </div>
     </div>
   );
