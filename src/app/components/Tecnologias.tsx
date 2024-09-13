@@ -57,11 +57,11 @@ const CategoryIcon = ({ category }: { category: string }) => {
 export default function Component() {
   return (
     <div className="max-w-4xl mx-auto p-8 text-black font-inter">
-      <h1 className="text-4xl md:text-5xl font-black mb-8 text-purple-600 uppercase font-inter">Tecnologías</h1>
+      <h1 className="text-4xl md:text-5xl font-black mb-8 text-blue-700 uppercase font-vcr">Tecnologías</h1>
       <p className="text-xl mb-8 font-bold">
         En mi viaje por el <span className="text-red-500">mundo del desarrollo web</span>, he cultivado{' '}
-        <span className="text-yellow-300">experiencia y habilidades</span> en una variedad de tecnologías.{' '}
-        <span className="text-blue-600">Mi stack tecnológico incluye:</span>
+        <span className="text-yellow-400">experiencia y habilidades</span> en una variedad de tecnologías.{' '}
+        <span className="text-blue-600 ">Mi stack tecnológico incluye:</span>
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {Object.entries(technologies).map(([category, techs]) => (

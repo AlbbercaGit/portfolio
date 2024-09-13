@@ -9,6 +9,7 @@ module.exports = {
       courier: ['Courier Prime', 'monospace'], 
       lora: ['Lora Variable', 'serif'],
       inter: ['"Inter Variable"', 'sans-serif'], 
+      vcr: ['"VCR OSD Mono"', 'monospace'],
 
     },},
   },

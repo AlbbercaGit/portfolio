@@ -59,7 +59,7 @@ export default function Component() {
 
   return (
     <div className="max-w-4xl mx-auto p-4">
-      <h1 className="text-4xl md:text-5xl font-black mb-8 text-purple-600 uppercase font-inter">Experiencia</h1>
+      <h1 className="text-4xl md:text-5xl font-black mb-8 text-blue-700 uppercase font-vcr">Experiencia</h1>
       <div className="space-y-8">
         {timelineData.map((item, index) => (
           <div 
@@ -78,7 +78,7 @@ export default function Component() {
               {item.link && (
                 <a 
                   href={item.link} 
-                  className="inline-flex font-inter items-center px-4 py-2 bg-purple-600 text-white font-bold uppercase tracking-wider hover:bg-purple-700 transition-colors"
+                  className="inline-flex font-inter items-center px-4 py-2 bg-blue-700 text-white font-bold uppercase tracking-wider hover:bg-blue-700 transition-colors"
                 >
                   Learn more
                   <ChevronRight className="ml-2 h-4 w-4" />

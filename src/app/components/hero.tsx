@@ -31,8 +31,8 @@ export default function Component() {
         <div className="w-full h-px bg-black opacity-10 transform rotate-45"></div>{" "}
       </div>
       <header className="flex justify-between items-center mb-12 relative z-10 font-mono font-bold md:w-4/5">
-        <div className="text-2xl text-black font-inter">A <span className="text-purple-600">.</span></div>
-        <button className="absolute left-1/2 transform -translate-x-1/2 bg-purple-600 text-white px-4 py-2 hover:bg-purple-800 transition-colors border-4 border-black">
+        <div className="text-2xl text-black font-inter">A <span className="text-blue-700">.</span></div>
+        <button className="absolute left-1/2 transform -translate-x-1/2 bg-blue-700 text-white px-4 py-2 hover:bg-purple-800 transition-colors border-4 border-black">
           Download CV
         </button>
         <button className="text-black hover:text-gray-700 transition-colors flex items-center">
@@ -45,7 +45,7 @@ export default function Component() {
             <p className="text-xl mb-2 text-black font-mono font-semibold">
               Heyy soy Albberca
             </p>
-            <h1 className="text-5xl md:text-6xl mb-6 font-inter uppercase font-extrabold text-purple-600 ">
+            <h1 className="text-5xl md:text-6xl mb-6 font-vcr uppercase font-extrabold text-blue-700 ">
               Full-Stack
               <br />
               Developer
@@ -56,9 +56,9 @@ export default function Component() {
           </div>
           <div className="self-center flex justify-center items-center">
             {/* Neo-brutalist Terminal */}
-            <div className="bg-black border-8 border-purple-600 w-full md:w-4/5 md:h-[300px] transform ">
+            <div className="bg-black border-8 border-blue-700 w-full md:w-4/5 md:h-[300px] transform ">
               {/* Terminal top bar */}
-              <div className="bg-purple-600 px-4 py-2 flex items-center">
+              <div className="bg-blue-700 px-4 py-2 flex items-center">
                 <div className="flex space-x-4">
                   <div className="w-6 h-6 bg-yellow-400 border-4 border-black"></div>
                   <div className="w-6 h-6 bg-green-400 border-4 border-black"></div>
@@ -77,7 +77,7 @@ export default function Component() {
       <footer className="mt-12 relative z-10 w-full">
         <nav className="flex justify-center font-mono font-bold relative max-w-md mx-auto">
           <div
-            className="absolute bottom-0 h-2 bg-purple-600 transition-all duration-300 ease-in-out"
+            className="absolute bottom-0 h-2 bg-blue-700 transition-all duration-300 ease-in-out"
             style={{
               left:
                 activeLink === "Estudios"
@@ -92,7 +92,7 @@ export default function Component() {
             <a
               key={link}
               href="#"
-              className="text-black hover:text-purple-600 w-1/3 text-center transition-colors pb-1 relative"
+              className="text-black hover:text-blue-700 w-1/3 text-center transition-colors pb-1 relative"
               onMouseEnter={() => setActiveLink(link)}
             >
               <span className="relative inline-block w-4/5">{link}</span>

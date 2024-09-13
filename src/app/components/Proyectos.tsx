@@ -6,7 +6,7 @@ const projects = [
     title: 'Portfolio Diego Escriche',
     description: 'Portfolio personal de Diego Escriche productor musical.',
     image: 'https://github.com/AlbbercaGit/videos/blob/main/portfolio/diego.png?raw=true',
-    color: 'bg-purple-600',
+    color: 'bg-blue-700text-blue-700',
   },
   {
     title: 'Pagina restaurante LeRomer',
@@ -67,7 +67,7 @@ export default function Component() {
     <div className="min-h-screen max-w-4xl mx-auto p-6 flex items-center justify-center font-mono">
       <div className="w-full max-w-6xl">
         <h1 
-          className={`text-4xl md:text-5xl font-black mb-8 text-purple-600 uppercase font-inter transition-all duration-1000 ease-out ${
+          className={`text-4xl md:text-5xl font-black mb-8 text-blue-700 uppercase font-vcr transition-all duration-1000 ease-out ${
             visibleItems[0] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
           }`}
           ref={el => {itemRefs.current[0] = el}}
