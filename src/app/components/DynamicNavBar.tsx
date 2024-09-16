@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from 'react'
 
 const sections = [
   { id: 'hero', name: 'INICIO' },
-  { id: 'Experiencia', name: 'EXPERIENCIA' },
+  { id: 'experiencia', name: 'EXPERIENCIA' },
   { id: 'proyectos', name: 'PROYECTOS' },
   { id: 'tecnologias', name: 'TECNOLOGÍAS' },
 ]

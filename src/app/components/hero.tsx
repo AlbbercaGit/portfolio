@@ -52,7 +52,7 @@ export default function Component() {
       <main className="flex-grow flex items-center w-full justify-center relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full md:w-4/5">
           <div>
-            <p className="text-3xl mb-2 text-black font-mono font-semibold">
+            <p className="text-2xl mb-2 text-black font-mono font-semibold">
               Heyy soy Albberca.
             </p>
             <h1 className="text-5xl md:text-6xl mb-6 font-vcr uppercase font-extrabold text-blue-700 ">
