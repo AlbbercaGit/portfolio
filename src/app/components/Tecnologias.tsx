@@ -60,7 +60,7 @@ export default function Component() {
       <h1 className="text-4xl md:text-5xl font-black mb-8 text-blue-700 uppercase font-vcr">Tecnologías</h1>
       <p className="text-xl mb-8 font-bold">
         En mi viaje por el <span className="text-red-500">mundo del desarrollo web</span>, he cultivado{' '}
-        <span className="text-yellow-400">experiencia y habilidades</span> en una variedad de tecnologías.{' '}
+        <span className="text-green-400">experiencia y habilidades</span> en una variedad de tecnologías.{' '}
         <span className="text-blue-600 ">Mi stack tecnológico incluye:</span>
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
