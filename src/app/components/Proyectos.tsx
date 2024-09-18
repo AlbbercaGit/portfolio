@@ -1,30 +1,38 @@
 "use client";
 import { useState, useEffect, useRef } from 'react'
+import { ChevronRight } from 'lucide-react'
+
 
 const projects = [
   {
     title: 'Portfolio Diego Escriche',
-    description: 'Portfolio personal de Diego Escriche productor musical.',
+    description: 'Portfolio personal de Diego Escriche, productor musical.',
     image: 'https://github.com/AlbbercaGit/videos/blob/main/portfolio/diego.png?raw=true',
     color: 'bg-blue-700text-blue-700',
+    link: 'https://albbercagit.github.io/DiegoEscriche/'
   },
   {
-    title: 'Pagina restaurante LeRomer',
-    description: 'Pagina de reservas y informaciond del restaurante LeRomer.',
+    title: 'Restaurante LeRomer',
+    description: 'Página de reservas e información del restaurante LeRomer.',
     image: 'https://raw.githubusercontent.com/AlbbercaGit/videos/main/portfolio/romer.png',
     color: 'bg-blue-500',
+    // link: 'https://albbercagit.github.io/leromero/'
+
   },
   {
-    title: 'Pagina tienda de parquet',
-    description: 'Pagina para informacion sobre la tienda de parquet valenciana.',
+    title: 'Tienda de parquet',
+    description: 'Página de información sobre la tienda de parquet en Valencia.',
     image: 'https://raw.githubusercontent.com/AlbbercaGit/videos/main/portfolio/lucia2.jpeg',
     color: 'bg-yellow-500',
+    // link: 'https://www.soprasteria.com'
+
   },
   {
     title: 'Portfolio Beatriz Dominguez',
-    description: 'Portfolio personal de la fotografa Beatriz Dominguez.',
+    description: 'Portfolio personal de la fotógrafa Beatriz Domínguez.',
     image: 'https://raw.githubusercontent.com/AlbbercaGit/videos/main/portfolio/bea.png',
     color: 'bg-green-500',
+    link: 'https://albbercagit.github.io/PortfolioBea/'
   },
 ]
 
@@ -104,7 +112,16 @@ export default function Component() {
                     opacity: hoveredProject === index ? 1 : 0,
                   }}
                 >
-                  <p className="text-lg font-bold text-black">{project.description}</p>
+                  <p className="text-lg font-bold text-black ">{project.description}</p>
+                  {project.link && (
+                <a 
+                  href={project.link} 
+                  className=" inline-flex font-inter items-center px-4 py-2 bg-blue-700 text-white font-bold uppercase tracking-wider hover:bg-blue-700 transition-colors"
+                >
+                  Échale un vistazo
+                  <ChevronRight className="ml-2 h-4 w-4" />
+                </a>
+              )}
                 </div>
               </div>
               <div 

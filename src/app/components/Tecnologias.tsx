@@ -1,32 +1,34 @@
+import { Eclipse } from 'lucide-react'
 import React from 'react'
-import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaSass, FaPhp, FaNodeJs, FaLaravel, FaDocker, FaGitAlt, FaGithub, FaNpm, FaWordpress } from 'react-icons/fa'
-import { SiTailwindcss, SiFigma, SiMysql,SiApache , SiMongodb, SiNextdotjs, SiNginx, SiTypescript, SiAstro } from 'react-icons/si'
+import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaSass, FaPhp, FaJava , FaBoxes , FaDocker, FaGitAlt, FaGithub, FaNpm, FaWordpress } from 'react-icons/fa'
+import { SiTailwindcss, SiFigma, SiMysql,SiApache , SiMongodb, SiNextdotjs, SiMulesoft , SiTypescript, SiAstro,SiEclipseide  } from 'react-icons/si'
 import { VscTerminalBash,VscVscode  } from 'react-icons/vsc'
 
 const technologies = {
-  Frontend: ['HTML', 'CSS', 'JavaScript', 'React', 'Tailwind CSS', 'SASS', 'Figma'],
-  Backend: ['PHP', 'Node.js', 'Laravel', 'Express.js', 'MySQL', 'MongoDB', 'Next.js', 'Nginx', 'Apache'],
+  Frontend: ['HTML', 'CSS', 'JavaScript', 'React', 'Tailwind CSS', 'Figma'],
+  Backend: ['PHP', 'Java', 'Microservicios', 'MySQL', 'MongoDB', 'Next.js', 'Mule', 'Apache'],
   Learning: [ 'Astro', 'Docker', 'TypeScript'],
-  Tools: ['Git', 'GitHub', 'Terminal', 'VS Code', 'npm', 'WordPress']
+  Tools: ['Git', 'Eclipse','GitHub', 'Terminal', 'VS Code', 'npm', 'WordPress']
 }
 
 // Mapeo de íconos por tecnología usando react-icons
 const techIcons: { [key: string]: JSX.Element | null } = {
   HTML: <FaHtml5 className="w-5 h-5 mr-2 text-orange-600" />,  // Color naranja
   CSS: <FaCss3Alt className="w-5 h-5 mr-2 text-blue-600" />,   // Color azul
+  Eclipse: <SiEclipseide className="w-5 h-5 mr-2 text-blue-500" />,   // Color azul
   JavaScript: <FaJsSquare className="w-5 h-5 mr-2 text-yellow-500" />,  // Color amarillo
   React: <FaReact className="w-5 h-5 mr-2 text-cyan-500" />,  // Color cyan
   'Tailwind CSS': <SiTailwindcss className="w-5 h-5 mr-2 text-teal-400" />,  // Color teal
   SASS: <FaSass className="w-5 h-5 mr-2 text-pink-500" />,  // Color rosado
   Figma: <SiFigma className="w-5 h-5 mr-2 text-indigo-500" />,  // Color indigo
   PHP: <FaPhp className="w-5 h-5 mr-2 text-indigo-600" />,  // Color azul oscuro
-  'Node.js': <FaNodeJs className="w-5 h-5 mr-2 text-green-600" />,  // Color verde
-  Laravel: <FaLaravel className="w-5 h-5 mr-2 text-red-500" />,  // Color rojo
-  'Express.js': <FaNodeJs className="w-5 h-5 mr-2 text-green-600" />,
+  'Java': <FaJava  className="w-5 h-5 mr-2 text-orange-600" />,  // Color verde
+  Microservicios: <FaBoxes  className="w-5 h-5 mr-2 text-pink-500" />,  // Color rojo
+  'Express.js': <FaJava  className="w-5 h-5 mr-2 text-green-600" />,
   MySQL: <SiMysql className="w-5 h-5 mr-2 text-blue-700" />,
   MongoDB: <SiMongodb className="w-5 h-5 mr-2 text-green-500" />,
   'Next.js': <SiNextdotjs className="w-5 h-5 mr-2 text-black" />,
-  Nginx: <SiNginx className="w-5 h-5 mr-2 text-green-500" />,
+  Mule: <SiMulesoft  className="w-5 h-5 mr-2 text-blue-500" />,
   Docker: <FaDocker className="w-5 h-5 mr-2 text-blue-500" />,
   Git: <FaGitAlt className="w-5 h-5 mr-2 text-red-600" />,
   GitHub: <FaGithub className="w-5 h-5 mr-2 text-gray-800" />,
@@ -44,11 +46,11 @@ const CategoryIcon = ({ category }: { category: string }) => {
     case 'Frontend':
       return <FaReact className="w-8 h-8 text-blue-600" />
     case 'Backend':
-      return <FaNodeJs className="w-8 h-8 text-red-600" />
+      return <FaJava  className="w-8 h-8 text-red-600" />
     case 'Learning':
       return <FaDocker className="w-8 h-8 text-yellow-300" />
     case 'Tools':
-      return <FaGitAlt className="w-8 h-8 text-purple-600" />
+      return <FaGitAlt className="w-8 h-8 text-green-400" />
     default:
       return null
   }
@@ -59,7 +61,7 @@ export default function Component() {
     <div className="max-w-4xl mx-auto p-8 text-black font-inter">
       <h1 className="text-4xl md:text-5xl font-black mb-8 text-blue-700 uppercase font-vcr">Tecnologías</h1>
       <p className="text-xl mb-8 font-bold">
-        En mi viaje por el <span className="text-red-500">mundo del desarrollo web</span>, he cultivado{' '}
+        En mi viaje por el <span className="text-red-500">mundo del desarrollo</span>, he cultivado{' '}
         <span className="text-green-400">experiencia y habilidades</span> en una variedad de tecnologías.{' '}
         <span className="text-blue-600 ">Mi stack tecnológico incluye:</span>
       </p>

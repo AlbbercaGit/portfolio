@@ -3,6 +3,7 @@ import Hero from './components/hero';
 import Proyectos from './components/Proyectos';
 import Timeline from './components/Timeline';
 import Tecnologias from './components/Tecnologias';
+import Footer from './components/Footer';
 import DynamicNavBar from './components/DynamicNavBar';
 
 import './globals.css';
@@ -26,6 +27,7 @@ export default function Home() {
         <section id="tecnologias">
           <Tecnologias />
         </section>
+        <Footer />
       </div>
       <DynamicNavBar />
     </div>

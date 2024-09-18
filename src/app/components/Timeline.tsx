@@ -2,24 +2,44 @@
 
 import React, { useEffect, useRef, useState } from 'react'
 import { ChevronRight } from 'lucide-react'
+import { FaJava, FaJs, FaAngular } from 'react-icons/fa'
+import { SiMysql, SiApache, SiMulesoft, SiTypescript } from 'react-icons/si'
 
 const timelineData = [
   {
     date: 'Mayo 2024 - Actualidad',
     title: 'Backend Developer en Sopra Steria',
-    description: 'Actualmente trabajo con tecnologías como Java, JavaScript y MySQL, desarrollando soluciones tanto en el front-end como en el back-end. También gestiono servidores utilizando herramientas como Apache o Mule, optimizando su rendimiento y asegurando su correcto funcionamiento.',
-    link: 'https://www.soprasteria.com'
-  },
+    description: (<>
+      Actualmente, trabajo con tecnologías como <span className="text-orange-600">Java</span>, <span className="text-yellow-500">JavaScript</span> y <span className="text-blue-700">MySQL</span>, desarrollando soluciones tanto en <span className="text-green-400">front-end</span> como en <span className="text-green-400">back-end</span>. Además, gestiono servidores utilizando herramientas como <span className="text-orange-500">Apache</span> y <span className="text-blue-500">Mule</span>, enfocándome en optimizar su rendimiento y garantizar su funcionamiento eficiente.
+    </>),
+    link: 'https://www.soprasteria.com',
+    icons: [
+      <FaJava key="java" className="w-5 h-5 mr-2" style={{ fill: '#007396' }} />,       
+      <FaJs key="js" className="w-5 h-5 mr-2" style={{ fill: '#F7DF1E' }} />,           
+      <SiMysql key="mysql" className="w-5 h-5 mr-2" style={{ fill: '#00758F' }} />,    
+      <SiApache key="apache" className="w-5 h-5 mr-2" style={{ fill: '#D22128' }} />,  
+      <SiMulesoft key="mule" className="w-5 h-5 mr-2" style={{ fill: '#008080' }} />   
+    ]
+      },
   {
     date: 'Mayo 2021 - Mayo 2024',
     title: 'Backend Developer en Praxya',
-    description: 'Trabaje con tecnologias como Ekon, Java, Javascript, Angular, MySQL Server y microservicios, ademas de gestionar el soporte para proyectos de clientes y toma de requisitos.',
-    link: 'https://www.linkedin.com/company/praxya-group/posts/?feedView=all'
-  },
+    description: (<>
+      Trabajé con tecnologías como <span className="text-blue-500">Ekon</span>, <span className="text-orange-600">Java</span>, <span className="text-yellow-500">JavaScript</span>, <span className="text-red-600">Angular</span>, <span className="text-blue-700">MySQL Server</span> y <span className="text-pink-500">microservicios</span>, además de gestionar el soporte para proyectos de clientes y toma de requisitos.
+    </>),
+    link: 'https://www.linkedin.com/company/praxya-group/posts/?feedView=all',
+    icons: [
+      <SiTypescript key="ts" className="w-5 h-5 mr-2" style={{ fill: '#2563EB' }} />,  
+      <FaJava key="java" className="w-5 h-5 mr-2" style={{ fill: '#007396' }} />,       
+      <FaJs key="js" className="w-5 h-5 mr-2" style={{ fill: '#F7DF1E' }} />,           
+      <FaAngular key="angular" className="w-5 h-5 mr-2" style={{ fill: '#DD0031' }} />,
+      <SiMysql key="mysql" className="w-5 h-5 mr-2" style={{ fill: '#00758F' }} />      
+    ]  },
   {
     date: 'Septiembre 2019 - Mayo 2021',
     title: 'Estudios en Desarrollo de Aplicaciones Web',
-    description: 'Realize los estudios de DAW en el instituto Camp de Morvedre del Puerto de Sagunto.',
+    description: 'Realicé los estudios de DAW en el instituto Camp de Morvedre del Puerto de Sagunto.',
+    icons: []
   }
 ]
 
@@ -69,12 +89,22 @@ export default function Component() {
             }`}
             ref={el => {
               itemRefs.current[index] = el;
-            }}          >
+            }}
+          >
             <div className="absolute left-0 top-0 w-1 h-full bg-black"></div>
             <div className="ml-8 p-4 bg-white border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
               <div className="text-lg font-bold text-black mb-1 font-inter">{item.date}</div>
               <h2 className="text-2xl font-black mb-2 text-black font-inter">{item.title}</h2>
               <p className="text-lg font-bold text-black font-inter mb-4 text-wrap w-[95%]">{item.description}</p>
+              {item.icons.length > 0 && (
+                <div className="flex space-x-2 mb-4">
+                  {item.icons.map((icon, iconIndex) => (
+                    <div key={iconIndex} className="text-2xl">
+                      {React.cloneElement(icon, { className: "w-6 h-6" })}
+                    </div>
+                  ))}
+                </div>
+              )}
               {item.link && (
                 <a 
                   href={item.link} 
