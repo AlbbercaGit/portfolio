@@ -197,12 +197,12 @@ export default function Component() {
         </div>
       </motion.main>
       <motion.footer className="mt-12 relative z-10 w-full" variants={itemVariants}>
-        <nav className="flex justify-center gap-2 md:gap-10 font-mono font-bold relative max-w-md mx-auto">
+        <nav className=" flex justify-center gap-2 md:gap-10 font-mono font-bold relative max-w-md mx-auto">
           <motion.a
             href="https://www.linkedin.com/in/yourusername"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 hover:text-blue-700 transition-colors"
+            className="invisible md:visible text-blue-600 hover:text-blue-700 transition-colors"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
@@ -238,7 +238,7 @@ export default function Component() {
             href="https://github.com/AlbbercaGit"
             target="Github"
             rel="noopener noreferrer"
-            className="text-blue-600 hover:text-blue-700 transition-colors"
+            className="invisible md:visible text-blue-600 hover:text-blue-700 transition-colors"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
