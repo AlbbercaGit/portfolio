@@ -32,7 +32,7 @@ export default function DynamicNavBar() {
           }
         })
       },
-      { threshold: 0.3 }
+      { threshold: 0.5 }
     )
 
     sections.forEach((section) => {

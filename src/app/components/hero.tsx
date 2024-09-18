@@ -197,7 +197,7 @@ export default function Component() {
         </div>
       </motion.main>
       <motion.footer className="mt-12 relative z-10 w-full" variants={itemVariants}>
-        <nav className="flex justify-center gap-10 font-mono font-bold relative max-w-md mx-auto">
+        <nav className="flex justify-center gap-2 md:gap-10 font-mono font-bold relative max-w-md mx-auto">
           <motion.a
             href="https://www.linkedin.com/in/yourusername"
             target="_blank"
